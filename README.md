@@ -1,7 +1,9 @@
 <a name="readme-top"></a>
 
 <p align="center">
-    <img src="https://thenounproject.com/api/private/icons/5499988/edit/?backgroundShape=SQUARE&backgroundShapeColor=%23000000&backgroundShapeOpacity=0&exportSize=752&flipX=false&flipY=false&foregroundColor=%23FFFFFF&foregroundOpacity=1&imageFormat=png&rotation=0" width="160">
+    <a href="#">
+        <img width="160" src="https://thenounproject.com/api/private/icons/5499988/edit/?backgroundShape=SQUARE&backgroundShapeColor=%23000000&backgroundShapeOpacity=0&exportSize=752&flipX=false&flipY=false&foregroundColor=%23FFFFFF&foregroundOpacity=1&imageFormat=png&rotation=0">
+    </a>
 </p>
 
 # Binary Trees
@@ -80,13 +82,24 @@ This repository includes a set of test files to verify the correctness of the im
 Compiling:
 
 ```sh
-gcc -Wall -Wextra -Werror -pedantic binary_tree_print.c tests/0-main.c 0-binary_tree_node.c -o 0-node
+gcc -Wall -Wextra -Werror -pedantic binary_tree_print.c tests/<test_file>.c <file>.c -o <output_file>
 ```
 
-Run the test:
+Run:
 
 ```sh
-./0-node
+./<output_file>
+```
+
+Example:
+
+```sh
+$ gcc -Wall -Wextra -Werror -pedantic binary_tree_print.c tests/0-main.c 0-binary_tree_node.c -o 0-node
+$ ./0-node
+       .-------(098)-------.
+  .--(012)--.         .--(402)--.
+(006)     (016)     (256)     (512)
+$
 ```
 
 <p align="right"><a href="#readme-top">Back to Top</a></p>
