@@ -48,22 +48,20 @@ void levelorder(const binary_tree_t *tree, void (*func)(int), size_t level)
 }
 
 /**
- * binary_tree_levelorder - Goes through a binary tree using level-order traversal
+ * binary_tree_levelorder - Goes through a binary tree
+ * using level-order traversal
  *
  * @tree: Pointer to the root node of the tree to traverse
  * @func: Pointer to a function to call for each node
  */
 void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int))
 {
-	size_t level;
 	size_t count = 0;
 
 	if (tree == NULL || func == NULL)
 		return;
 
-	level = binary_tree_height(tree);
-
-	while (count < level)
+	while (binary_tree_height(tree) > count)
 	{
 		levelorder(tree, func, count);
 		count++;
